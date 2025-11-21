@@ -3,4 +3,7 @@ from django.http import HttpResponse
 
 # Create your views here.
 def clientes (request):
-    return HttpResponse('Ola mundo!')
+    return render(request, 'clientes.html')
+
+def cadastrarClientes (request):
+    return render(request, 'cadastrarClientes.html')    
